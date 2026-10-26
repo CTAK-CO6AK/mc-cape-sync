@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile Condition="'$(SelfContained)' == 'true'">true</EnableCompressionInSingleFile>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <Target Name="PublishBoth">
+    <MSBuild Projects="$(MSBuildProjectFullPath)"
+             Targets="Publish"
+             Properties="Configuration=Release;SelfContained=true;EnableCompressionInSingleFile=true;IntermediateOutputPath=obj\sc\;PublishDir=publish\self-contained\" />
+    <MSBuild Projects="$(MSBuildProjectFullPath)"
+             Targets="Publish"
+             Properties="Configuration=Release;SelfContained=false;EnableCompressionInSingleFile=false;IntermediateOutputPath=obj\fd\;PublishDir=publish\framework-dependent\" />
+    <Copy SourceFiles="publish\self-contained\BedrockCapeSync.exe" DestinationFiles="publish\BedrockCapeSync-SelfContained.exe" />
+    <Copy SourceFiles="publish\framework-dependent\BedrockCapeSync.exe" DestinationFiles="publish\BedrockCapeSync-FrameworkDependent.exe" />
+  </Target>
+
+</Project>

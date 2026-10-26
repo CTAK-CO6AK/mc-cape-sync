@@ -1,0 +1,25 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+publish/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Bedrock tool outputs / tokens
+.bedrock_tokens.json
+backups/
+snapshots/

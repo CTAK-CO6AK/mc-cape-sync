@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppTitle" xml:space="preserve">
+    <value>Bedrock Cape Sync</value>
+  </data>
+  <data name="BtnLogin" xml:space="preserve">
+    <value>Sign in with Microsoft</value>
+  </data>
+  <data name="CodePrompt" xml:space="preserve">
+    <value>Confirmation code:</value>
+  </data>
+  <data name="BtnCopyLink" xml:space="preserve">
+    <value>Copy link</value>
+  </data>
+  <data name="HintDeviceCode" xml:space="preserve">
+    <value>Open the link in a browser where you are signed in to the desired Microsoft account, or in a private window.</value>
+  </data>
+  <data name="StatusWaiting" xml:space="preserve">
+    <value>Waiting for confirmation…</value>
+  </data>
+  <data name="StepXboxLogin" xml:space="preserve">
+    <value>Xbox Sign-in</value>
+  </data>
+  <data name="StepPlayFabLogin" xml:space="preserve">
+    <value>PlayFab Sign-in</value>
+  </data>
+  <data name="StepFranchiseSession" xml:space="preserve">
+    <value>Minecraft Session</value>
+  </data>
+  <data name="StepSync" xml:space="preserve">
+    <value>Syncing</value>
+  </data>
+  <data name="ResultBefore" xml:space="preserve">
+    <value>Before sync: {0} items</value>
+  </data>
+  <data name="ResultAfter" xml:space="preserve">
+    <value>After sync: {0} items ({1})</value>
+  </data>
+  <data name="CapesHeader" xml:space="preserve">
+    <value>Capes ({0}):</value>
+  </data>
+  <data name="BtnSwitchAccount" xml:space="preserve">
+    <value>Sign in with another account</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>An error occurred</value>
+  </data>
+  <data name="BtnRestart" xml:space="preserve">
+    <value>Start over</value>
+  </data>
+  <data name="LabelStage" xml:space="preserve">
+    <value>Stage: {0}</value>
+  </data>
+  <data name="LabelError" xml:space="preserve">
+    <value>Error: {0}</value>
+  </data>
+  <data name="LabelHttpStatus" xml:space="preserve">
+    <value>HTTP status: {0}</value>
+  </data>
+  <data name="LabelServerResponse" xml:space="preserve">
+    <value>Server response:</value>
+  </data>
+  <data name="ConfirmCreateProfile" xml:space="preserve">
+    <value>This account does not have a Minecraft Bedrock profile yet. The game creates it upon first launch.&#xD;&#xA;&#xD;&#xA;Create profile now?</value>
+  </data>
+  <data name="DialogProfileTitle" xml:space="preserve">
+    <value>Minecraft Bedrock</value>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="WarningRedeem" xml:space="preserve">
+    <value>Warning when redeeming purchases (HTTP {0}):&#xD;&#xA;{1}</value>
+  </data>
+  <data name="ErrDeviceCodeFailed" xml:space="preserve">
+    <value>Failed to request device code</value>
+  </data>
+  <data name="ErrMsaAborted" xml:space="preserve">
+    <value>Sign-in aborted: {0}</value>
+  </data>
+  <data name="ErrMsaTokenFailed" xml:space="preserve">
+    <value>Failed to get Microsoft token</value>
+  </data>
+  <data name="ErrCodeExpired" xml:space="preserve">
+    <value>Code expired</value>
+  </data>
+  <data name="ErrXboxAuthFailed" xml:space="preserve">
+    <value>Failed to authenticate Xbox user</value>
+  </data>
+  <data name="ErrXstsFailed" xml:space="preserve">
+    <value>Failed to get XSTS token</value>
+  </data>
+  <data name="ErrXboxNoProfile" xml:space="preserve">
+    <value>Account has no Xbox profile, create it at xbox.com</value>
+  </data>
+  <data name="ErrXboxCountry" xml:space="preserve">
+    <value>Xbox Live is not available in the account's country</value>
+  </data>
+  <data name="ErrXboxAgeVerification" xml:space="preserve">
+    <value>Age verification required</value>
+  </data>
+  <data name="ErrXboxChildAccount" xml:space="preserve">
+    <value>Child account: an adult must add it to a family</value>
+  </data>
+  <data name="ErrXboxGeneric" xml:space="preserve">
+    <value>Xbox Live error: XErr {0}</value>
+  </data>
+  <data name="ErrProfileCancelled" xml:space="preserve">
+    <value>Sign-in cancelled: Minecraft Bedrock profile not found.</value>
+  </data>
+  <data name="ErrPlayFabGeneric" xml:space="preserve">
+    <value>PlayFab error</value>
+  </data>
+  <data name="ErrXuidNotFound" xml:space="preserve">
+    <value>Failed to determine user XUID</value>
+  </data>
+  <data name="ErrFranchiseSession" xml:space="preserve">
+    <value>Failed to start Minecraft session</value>
+  </data>
+  <data name="ErrMcTokenNotFound" xml:space="preserve">
+    <value>MCToken not found in response</value>
+  </data>
+  <data name="ErrDiscoveryFailed" xml:space="preserve">
+    <value>Failed to get service discovery URIs</value>
+  </data>
+  <data name="ErrInventoryFailed" xml:space="preserve">
+    <value>Failed to read player inventory</value>
+  </data>
+  <data name="ErrCapesFailed" xml:space="preserve">
+    <value>Failed to get capes catalog</value>
+  </data>
+  <data name="StageMsa" xml:space="preserve">
+    <value>Microsoft Sign-in</value>
+  </data>
+  <data name="StageXbox" xml:space="preserve">
+    <value>Xbox Sign-in</value>
+  </data>
+  <data name="StagePlayFab" xml:space="preserve">
+    <value>PlayFab Sign-in</value>
+  </data>
+  <data name="StageFranchise" xml:space="preserve">
+    <value>Minecraft Session</value>
+  </data>
+  <data name="StageSync" xml:space="preserve">
+    <value>Syncing</value>
+  </data>
+  <data name="StageCapes" xml:space="preserve">
+    <value>Capes Catalog</value>
+  </data>
+</root>
