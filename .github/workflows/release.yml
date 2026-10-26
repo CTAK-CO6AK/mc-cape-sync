@@ -1,0 +1,38 @@
+name: Release Build
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Publish Self-Contained
+        run: dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:EnableCompressionInSingleFile=true -o publish/self-contained
+
+      - name: Publish Framework-Dependent
+        run: dotnet publish -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true -p:EnableCompressionInSingleFile=false -o publish/framework-dependent
+
+      - name: Archive and Rename
+        run: |
+          Compress-Archive -Path publish/self-contained/* -DestinationPath McCapeSync-win-x64-SelfContained.zip
+          Compress-Archive -Path publish/framework-dependent/* -DestinationPath McCapeSync-win-x64-Light.zip
+
+      - name: Upload to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            McCapeSync-win-x64-SelfContained.zip
+            McCapeSync-win-x64-Light.zip
